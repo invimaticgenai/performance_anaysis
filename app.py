@@ -45,8 +45,8 @@ input_df = pd.DataFrame(input_data)
 # Prediction button
 if st.sidebar.button('Predict'):
     # Note: Below encoders and scalers should ideally be loaded from trained objects
-    label_encoder = joblib.load("C:\\Users\\Vaibhav\\Downloads\\Performance_Analysis\\label_encoder.pkl")
-    scaler = joblib.load("C:\\Users\\Vaibhav\\Downloads\\Performance_Analysis\\scaler.pkl")
+    label_encoder = joblib.load("label_encoder.pkl")
+    scaler = joblib.load("scaler.pkl")
 
     # Encoding and scaling
     for column in ['Gender', 'Ethnicity', 'ParentalEducation', 'Tutoring', 'ParentalSupport', 'Extracurricular', 'Sports', 'Music', 'Volunteering']:
