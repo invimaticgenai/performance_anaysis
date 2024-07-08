@@ -5,7 +5,7 @@ import joblib
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Load the saved model
-model_path = '\svc_model.pkl'
+model_path = 'svc_model.pkl'
 loaded_model = pickle.load(open(model_path, 'rb'))
 
 st.title('👩🏻‍🎓 Performance Analysis')
